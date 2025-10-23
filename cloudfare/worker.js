@@ -222,7 +222,7 @@ async function getEpisodeUrl(seriesItem, seasonNum, episodeNum, episodesData, ma
 async function fetchAndParseLivePlaylist(includeAdult = false) {
   const playlistUrl = includeAdult
     ? 'https://raw.githubusercontent.com/Drewski2423/DrewLive/refs/heads/main/MergedPlaylist.m3u8'
-    : 'https://raw.githubusercontent.com/Drewski2423/DrewLive/refs/heads/main/MergedCleanPlaylist.m3u8';
+    : 'https://raw.githubusercontent.com/spliff123/tv/refs/heads/main/tv_main.m3u8';
 
   try {
     const res = await httpGet(playlistUrl);
